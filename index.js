@@ -8,7 +8,7 @@ const booksRoute = require('./routes/booksRoute');
 
 
 const cors__options = {
-    origin: 'https://musing-noether-ca656e.netlify.app/',
+    origin: 'https://musing-noether-ca656e.netlify.app',
     credentials: true,            //access-control-allow-credentials:true
 }
 require('dotenv').config()
