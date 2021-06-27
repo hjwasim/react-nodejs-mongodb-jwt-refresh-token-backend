@@ -13,6 +13,9 @@ const cors__options = {
 }
 require('dotenv').config()
 
+// PORT
+const PORT = process.env.PORT || 6000;
+
 //Middlewares
 app.use(cors(cors__options));
 app.use(morgan('tiny'));
@@ -35,4 +38,4 @@ mongoose
     .catch(err => console.log("Mongodb not connected"));
 
 // Server 
-app.listen(5000, () => console.log("Port started on 5000!"))
+app.listen(6000, () => console.log("Port started on 6000!"))
